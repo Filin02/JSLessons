@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №2</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 1</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">
+                    Задача 1. Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+                </p>
+
+                <script>
+
+                    //1.Вводимо необхідні данні
+                    let numberOne = parseFloat(prompt('Перше дійсне число'));
+                    let numberTwo = parseFloat(prompt('Друге дійсне число'));
+
+                    //2.Знаходимо результат
+                    let numbersSum = numberOne + numberTwo;
+                    let numbersIncrease = numberOne*numberTwo;
+                    let numbersDiff = numberOne/numberTwo;
+                    //1.Виведення результата            
+                    document.write(`
+                    <table border = "2px" 
+                    style="text-align:center;
+                            margin: 30px auto;">
+                        <tr>
+                            <th>Шуканий результат</th>
+                            <th>Отримане значення</th>
+                        </tr>
+                        <tr>
+                            <th>Cума</th>
+                            <td>${numbersSum.toFixed(2)}</td>
+                        </tr>
+                        <tr>
+                            <th>Добуток</th>
+                            <td>${numbersIncrease.toFixed(2)}</td>
+                        </tr>
+                        <tr>
+                            <th>Частка</th>
+                            <td>${numbersDiff.toFixed(2)}</td>
+                        </tr>
+                    </table>
+                    `)
+
+                </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>
+
