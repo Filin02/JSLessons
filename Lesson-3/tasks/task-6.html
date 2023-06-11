@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №3</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 6</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
+                </p>
+
+                <script>
+
+
+                    //Крок 0. Позначення величин
+                    // dayNum - назва категорії
+
+                    //Крок 1. Введення величин
+                    let dayNum = prompt('Введіть номер дня тижня')
+                    let dayName 
+                    //Крок 2. Розв"язок заадачі
+                    switch (dayNum) {
+                        case '1': dayName = 'Понеділок' 
+                        break;
+
+                        case '2': dayName = 'Вівторок' 
+                        break;
+
+                        case '3': dayName = 'Середа' 
+                        break;
+                        case '4': dayName = 'Четвер' 
+                        break;
+                        case '5': dayName = 'П`ятниця' 
+                        break;
+                        case '6': dayName = 'Субота' 
+                        break;
+                        case '7': dayName = 'Неділя' 
+                        break;
+
+                        default: dayName = 'В тиждні 7 днів'
+                        break;
+                    }
+                    alert(dayName)
+                </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>

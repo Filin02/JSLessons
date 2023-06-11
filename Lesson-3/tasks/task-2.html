@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №3</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 2</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.</p>
+
+                <script>
+
+
+                    //Крок 0. Позначення величин
+                    // productPrice - ціна товару
+                    // freeMoney - кількість грошей
+                    //Крок 1. Введення величин
+                    let productPrice = parseFloat(prompt('Яка ціна товару,грн'))
+                    let freeMoney = parseFloat(prompt('Скільки є грошей,грн'))
+                    const CHANGE = 4
+                    //Крок 2. Розв"язок заадачі
+                    if(productPrice > freeMoney)
+                        alert('Вам відмолвено у покупці')
+                    else if (freeMoney >= CHANGE)
+                        alert('Можете купити лоторею за 4 грн')
+                    
+
+                </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+
+
+</body>
+</html>

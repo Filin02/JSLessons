@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №3</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 4</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+                </p>
+
+                <script>
+
+
+                    //Крок 0. Позначення величин
+                    // humanAge - вік
+
+                    //Крок 1. Введення величин
+                    let humanAge = parseFloat(prompt('Введіть ваш вік'))
+                    
+                    //Крок 2. Розв"язок заадачі
+                    if (humanAge<=6)
+                        alert('Ви ще в садочку')
+                    else if (humanAge<=16 || 6>=humanAge)
+                        alert ('Ви школяр')
+                    else if (humanAge<=25 || 16>=humanAge)
+                        alert('Ви студент')
+                    else if (humanAge<=60||25>=humanAge)
+                        alert ('Ви працівник')
+                    else 
+                        alert('Ви пенсіонер')
+                          
+                </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>

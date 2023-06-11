@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №3</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 5</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+                </p>
+
+                <script>
+
+
+                    //Крок 0. Позначення величин
+                    // driverCategory - назва категорії
+
+                    //Крок 1. Введення величин
+                    let driverCategory = prompt('Введіть категорію (A,B,C)')
+                    let transport 
+                    //Крок 2. Розв"язок заадачі
+                    switch (driverCategory) {
+                        case 'A': transport = 'Мотоцикл' 
+                        break;
+
+                        case 'B': transport = 'Автомобіль' 
+                        break;
+
+                        case 'C': transport = 'Вантажний автомобіль' 
+                        break;
+
+                        default: transport = 'Такої категорії не існує'
+                        break;
+                    }
+                    alert(transport)
+                </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>
