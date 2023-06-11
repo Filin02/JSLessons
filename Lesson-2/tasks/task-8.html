@@ -23,17 +23,21 @@
 
                 <script>
 
-                    //1.Вводимо необхідні данні
-                    let placeNumber = Math.round(Math.random(1,12))
-                    let dayNumber = Math.round(Math.random(0,6))
+                     //1.Вводимо необхідні данні
+                    const MIN_PLACE_NUM = 1
+                    const MAX_PLACE_NUM = 12
+                    const MIN_DAY_NUM = 0
+                    const MAX_DAY_NUM = 6
+                    let randomPlaceNum = Math.floor(Math.random() * (MAX_PLACE_NUM - MIN_PLACE_NUM + 1)) + MIN_PLACE_NUM
+                    let randomDayNum = Math.floor(Math.random() * (MAX_DAY_NUM - MIN_DAY_NUM + 1)) + MIN_DAY_NUM
                     
                     //2.Знаходимо результат
-                    let randomSum = placeNumber + dayNumber
+                    let sumRandomNum = randomPlaceNum + randomDayNum
                     
                     //3.Виведення результата            
                     document.write(`
                     <div style='margin-top:20px'>
-                        <h2>Сума випадкових чисел дорівнює ${randomSum.toFixed(2)} </h2>
+                        <h2>Сума випадкових чисел дорівнює ${sumRandomNum} </h2>
                     </div>
                     `)
 
