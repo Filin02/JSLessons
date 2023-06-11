@@ -26,11 +26,11 @@
                     //1.Вводимо необхідні данні
                     let productPrice = parseFloat(prompt('Вартість товару,грн'))
                     let productQty = parseFloat(prompt('Кількість товару,грн'))
-                    const vatTax = 5;
+                    const VAT_TAX = 5;
                     
                     //2.Знаходимо результат
                     let productsTotalPrice = productPrice * productQty;
-                    let percentVat = (productsTotalPrice * vatTax) / 100
+                    let percentVat = (productsTotalPrice * VAT_TAX) / 100
                     //3.Виведення результата            
                     document.write(`
                         <h2>ПДВ для ящиків з цукром буде складати ${percentVat.toFixed(1)} грн <h2>
