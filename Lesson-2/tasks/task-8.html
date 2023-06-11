@@ -30,6 +30,8 @@
                     const MAX_DAY_NUM = 6
                     let randomPlaceNum = Math.floor(Math.random() * (MAX_PLACE_NUM - MIN_PLACE_NUM + 1)) + MIN_PLACE_NUM
                     let randomDayNum = Math.floor(Math.random() * (MAX_DAY_NUM - MIN_DAY_NUM + 1)) + MIN_DAY_NUM
+                    document.write(`<h2>Перше число дорівнює ${randomPlaceNum}</h2>`)
+                    document.write(`<h2>Друге число дорівнює ${randomDayNum}</h2>`)
                     
                     //2.Знаходимо результат
                     let sumRandomNum = randomPlaceNum + randomDayNum
