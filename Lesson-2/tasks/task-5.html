@@ -25,12 +25,12 @@
 
                     //1.Вводимо необхідні данні
                     let length = Math.round(prompt('Довжина,см','0'))
-                    const santimetersInMeter = 100
-                    const metersInKilometer = 1000
+                    const SANTIMETERS_IN_METER = 100
+                    const METERS_IN_KILOMETER = 1000
                     
                     //2.Знаходимо результат
-                    let santimeterLength = length / santimetersInMeter;
-                    let kilometersLength = santimeterLength / metersInKilometer;
+                    let santimeterLength = length / SANTIMETERS_IN_METER;
+                    let kilometersLength = santimeterLength / METERS_IN_KILOMETER;
                     //3.Виведення результата            
                     document.write(`
                     <h2>Довжина ${santimeterLength} м. або ${kilometersLength} км.</h2>
