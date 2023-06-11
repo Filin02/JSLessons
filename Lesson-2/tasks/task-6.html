@@ -25,12 +25,12 @@
 
                     //1.Вводимо необхідні данні
                     let seconds = Math.round(prompt('Скільки пройшло секунд'))
-                    const secondsInMinute = 60
-                    const minutesInHour = 60
+                    const SECONDS_IN_MINUTE = 60
+                    const MINUTES_IN_HOUR = 60
                     
                     //2.Знаходимо результат
-                    let minutesTotal = seconds / secondsInMinute
-                    let hoursTotal = minutesTotal / minutesInHour
+                    let minutesTotal = seconds / SECONDS_IN_MINUTE
+                    let hoursTotal = minutesTotal / MINUTES_IN_HOUR
                     
                     //3.Виведення результата            
                     document.write(`
