@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №3</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 9</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">Задача 8. Користувач загадує число. За 3 спроби комп’ютер намагається вгадати число користувача (використати confirm).
+                </p>
+                
+                <script>
+                    let userNum
+                    for(i=0;i<3;i++)
+                    {
+                        const RANDOM_NUM = 1+Math.floor(Math.random()*(10-1+1))
+                        userNum = confirm(`Ваше число ${RANDOM_NUM}?`)
+                        if(userNum===true)
+                        {alert('Круто!!!') 
+                        break}
+                        
+                        else 
+                        alert('Спробую ще раз')
+                    }
+                </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>
