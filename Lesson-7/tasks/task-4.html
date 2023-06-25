@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №3</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 4</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">Створити функцію, яка для 3 заданих чисел знаходить одночасно декілька результатів: кількість парних, кількість додатних, кількість більших за 100.</p>
+
+                <script>
+                    function getResult (){
+                        let totalPairedNums
+                        let totalPositiveNums
+                        let totalbiggerThen100Nums
+                        for(let i = 1;i<=3;i++) {
+                        let num = parseInt(prompt(`Введіть число ${i}`))
+                        
+                        if(num%2===0) totalPairedNums = i
+                        else totalPairedNums = '<h2>Немає</h2>'
+                        if(num>0) totalPositiveNums = i
+                        else totalPositiveNums = '<h2>Немає</h2>'
+                        if(num>100) totalbiggerThen100Nums = i
+                        else totalbiggerThen100Nums ='<h2>Немає</h2>'
+                    }                                   
+                    
+                        document.write(`<h2>Парних чисел - ${totalPairedNums}</h2><br>
+                        <h2>Додатніх чисел - ${totalPositiveNums}</h2>
+                        <h2>Більших за 100 - ${totalbiggerThen100Nums}</h2`)
+                        return 
+                    }
+
+                    getResult()
+
+                    
+                </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>
