@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №8</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 5</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">Задача 5. Дано послідовність оцінок учня. Підрахувати кількість:
+                    1.	двійок
+                    2.	кількість хороших оцінок (добре, відмінно);
+                    3.	кількість оцінок, які нижче середнього.
+                    
+                    </p>
+
+                <script>
+                    
+                    function getPupilScores () {
+                        let scores = []
+                        for(let i = 0; i<=3; ){
+                            let inputScore = parseInt(prompt('Введіть оцінку'))
+                            if(inputScore >5 || inputScore <= 0)
+                             throw new Error ('Некоректна оцінка')
+                                scores.push(inputScore) 
+                                i++
+                            
+                            
+                        }
+
+                        return scores
+                    }
+
+                    let scoresList = getPupilScores()
+
+                    function getBadScores() {
+                        let countBadScores = 0
+                        
+                        for(let i=0;i<scoresList.length;i++){
+                            if(scoresList[i]===2)
+                            countBadScores+=1
+                        }
+
+                        return countBadScores
+                    }
+
+                    function getGoodScores(){
+                        let countGoodScores = 0
+                        for(let i=0;i<scoresList.length;i++){
+                            if(scoresList[i]===4 || 5===scoresList[i] )
+                            countGoodScores+=1
+                        }
+
+                        return countGoodScores
+                    }
+
+                    function getAverageScore() {
+                        let sumScores = 0
+                        for(let i=0;i<scoresList.length;i++){
+                            sumScores+=scoresList[i]
+                        }
+
+                        let avarageScore = sumScores / scoresList.length
+                        
+                        return avarageScore
+                    }
+
+                    function getScoresLessAvarage(){
+                        let countLessAvarage = 0
+                        for(let i=0;i<scoresList.length;i++){
+                            if(scoresList[i] < getAverageScore(scoresList))
+                            countLessAvarage+=1
+                        }
+
+                        return countLessAvarage
+                    }
+
+                    document.write(`<h2>Кількість двійок - ${getBadScores(scoresList)}, Кількість хороших оцінок - ${getGoodScores(scoresList)}, Кількість оцінок нижче середнього - ${getScoresLessAvarage(scoresList)} </h2>`)
+
+                    
+                    
+                </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>
