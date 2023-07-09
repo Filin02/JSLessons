@@ -27,15 +27,14 @@
                         arr.push(randNum)
                     }
                     
-                    arr.forEach(
-                        (el,index,baseArr)=>{
-                        if(baseArr[index]>arr[0]){
-                            baseArr[index]*=2
-                            document.write(baseArr[index])
-                        }
+                    arr.forEach((element,index,baseArr)=>{
+                        if(element>baseArr[0]) 
+                        baseArr[index]*=2
                         
                         }
                     )
+
+                    document.write(arr)
 
                     
                     
