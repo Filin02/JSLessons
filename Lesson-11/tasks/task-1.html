@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №11</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 1</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">Знайти суми елементів у вказаній області масиви розділені на 4 рівні частини -  не звертаємо увагу на криві малюнки</p>
+
+                <script>
+                    
+                    // 1)-----------------------------------------
+
+                    let prices = [
+                        [46,45,64,38,23,34,23,34],
+                        [34,45,64,38,64,24,34,23],
+                        [67,45,64,76,23,54,32,43],
+                        [35,45,64,38,23,65,42,56]
+                    ]
+
+                    // let sum0 = 0
+                    
+                    // for(let rowNums=0;rowNums<2;rowNums++){
+                    //     for (let columnNums=0;columnNums<4;columnNums++) {
+                    //         sum += prices[rowNums][columnNums]
+                    //     }
+                    // }
+
+                    // 2)-----------------------------------------
+
+                    // let sum1 = 0
+
+                    // for(let rowNums=0;rowNums<2;rowNums++){
+                    //     for (let columnNums=4;columnNums<prices[rowNums].length;columnNums++) {
+                    //         sum1+= prices[rowNums][columnNums]
+                    //     }
+                    // }
+                    
+                    // 3)-----------------------------------------
+
+                    // let sum2=0
+
+                    // for(let rowNums=2;rowNums<prices.length; rowNums++){
+                    //     for (let columnNums=0; columnNums<4;columnNums++) {
+                    //         sum2+=prices[rowNums][columnNums]
+                    //     }
+                    // }
+
+                    // document.write(sum2)
+
+                    // 4)-----------------------------------------
+                    
+                    // let sum3 = 0
+                    
+                    // for(let rowNums=2;rowNums<prices.length;rowNums++){
+                    //     for (let columnNums=4;prices[rowNums].length; columnNums++) {
+                    //         sum3+= prices[rowNums][columnNums]
+                    //     }
+                    // }
+                    // document.write(sum3)
+
+                    // 5)------ Суму парних рядків
+
+                    //     let sum4 = 0
+                    // for(let rowNums=1;rowNums<prices.length; rowNums+=2){
+                    //     for(let columnNums=0;columnNums<prices[rowNums].length;columnNums++)
+                    //         sum4+= prices[rowNums][columnNums]
+                    // }
+                    //     document.write(sum4)
+                    
+                    // 6)------ У парних рядках – непарні стовпці,
+
+                    //     let sum5 = 0
+                    // for(let rowNums=1;rowNums<prices.length; rowNums+=2){
+                    //     for(let columnNums=1;columnNums<prices[rowNums].length;columnNums=columnNums+2)
+                    //         sum5+= prices[rowNums][columnNums]
+                    // }
+                    //     document.write(sum5)
+
+                    // у непарних – парні.
+                    
+                    //     let sum6 = 0
+                    // for(let rowNums=0;rowNums<prices.length; rowNums+=2){
+                    //     for(let columnNums=0;columnNums<prices[rowNums].length;columnNums=columnNums+2)
+                    //         sum6+= prices[rowNums][columnNums]
+                    // }
+                    //     document.write(sum6)
+                    
+                    
+
+
+               </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №11</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 2</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">Дано інформацію про прибуток К магазинів протягом тижня. Знайти :</p>
+
+                <script>
+                    
+                    let marketsProfit = [
+                        [10,15,13,10,14,15,18],
+                        [13,15,21,11,14,18,18],
+                        [13,15,15,10,16,16,17],
+                        [18,15,18,16,14,14,15],
+                        
+                    ]
+
+                    // 1)----- загальний прибуток кожного масиву за тиждень;
+
+                //     function getTotalWeekSum (weekIndex,arr){
+                //         let sum = 0
+                //     for(let i=0+weekIndex; i < 1+weekIndex;i++){
+                //         for(let j=0;j<marketsProfit[0+weekIndex].length;j++){
+                //            sum+=marketsProfit[i][j]
+                //         }
+                //     }
+
+                //     return sum
+                // }
+
+                
+                    
+                //     document.write(`Виручка за перший тиждень дорівнює - ${getTotalWeekSum(0,marketsProfit)} тис.<br>`)
+                //     document.write(`Виручка за другий тиждень дорівнює - ${getTotalWeekSum(1,marketsProfit)} тис.<br>`)
+                //     document.write(`Виручка за третій тиждень дорівнює - ${getTotalWeekSum(2,marketsProfit)} тис.<br>`)
+                //     document.write(`Виручка за четвертий тиждень дорівнює - ${getTotalWeekSum(3,marketsProfit)} тис.<br>`)
+                
+                // ===========================================================================================================
+                
+                //2. ---- загальний прибуток усіх магазинів по дням (загальний прибуток усіх магазинів за понеділок, за вівторок, і т.д.
+                
+                // function getSumOfEveryDay(dayIndex,arr){ 
+                //     let sum=0
+                // for(let i=0;i<arr.length;i++){
+                //     for(let j=dayIndex-1; j<dayIndex;j++){
+                //         sum+=arr[i][j]
+                //         }
+                //     }
+                //     return sum
+                // }
+
+                // ------- 3.загальний прибуток за робочі дні
+
+                // function getSumOfWorkDay(arr){ 
+                //     let sum=0
+                // for(let i=0;i<arr.length;i++){
+                //     for(let j=0; j<5;j++){
+                //         sum+=arr[i][j]
+                //         }
+                //     }
+                //     return sum
+                // }
+                // getSumOfWednesday(marketsProfit)
+
+                // ------- 4.загальний прибуток за вихідні дні
+
+                // function getSumOfHolidays(arr){ 
+                //     let sum=0
+                // for(let i=0;i<arr.length;i++){
+                //     for(let j=5; j<=6;j++){
+                //         sum+=arr[i][j]
+                //         }
+                //     }
+                //     return sum
+                // }
+
+                // getSumOfWednesday(marketsProfit)
+
+                // ------- 5.максимальний прибуток за середу
+
+                // function getSumOfWednesday(arr){ 
+                // let max = arr[0][2]
+                // for(let i=0;i<arr.length;i++){
+                //     for(let j=2;j<=2;j++){
+                //             if(arr[i][j]>max)
+                //             max=arr[i][j]
+                //         }
+                        
+                //     }
+                //     return max
+                // }
+
+                // document.write(`За усі середи найбільша виручка була - ${getSumOfWednesday(marketsProfit)} тис. грн`)
+
+                // -------- 6.відсортувати кожен тиждень за зростанням
+
+            //     function getSortArr(arr){ 
+            //         for(i=0;i<arr.length;i++){
+            //             arr[i].sort((day1,day2)=>day1-day2)
+            //         }
+
+            //         return arr
+            //     }
+
+            //    document.write(getSortArr(marketsProfit))
+
+
+
+               </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>
