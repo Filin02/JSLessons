@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №14</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 2</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">Створити 2 окремих списки з копіями об’єктів, що містять сайти з вартість до 10000 і більше 10000</p>
+
+                <script>
+                       
+                       const sites = [
+                            {
+                                name: 'JStep',
+                                owner: 'Philip',
+                                sponsors: [
+                                    {
+                                        lastName : 'Newman',
+                                        firsName: 'Jack',
+                                        investingSum: 30000,
+                                    },
+
+                                    {
+                                        lastName : 'Parker',
+                                        firsName: 'Piter',
+                                        investingSum: 20000,
+                                    },
+
+                                    {
+                                        lastName : 'Piterson',
+                                        firsName: 'Joeh',
+                                        investingSum: 20000 
+                                    }
+                                
+                                ],
+
+                                reliseYear: 2010,
+                                price: 120450,
+
+                            },
+
+                            {
+                                name: 'Cooking',
+                                owner: 'Paul',
+                                sponsors: [
+
+                                {
+                                    lastName : 'Jones',
+                                    firsName: 'Alex',
+                                    investingSum: 120340 
+                                },
+
+                                {
+                                    lastName : 'Nikelson',
+                                    firsName: 'Anne',
+                                    investingSum: 134078 
+                                },
+
+                                {
+                                    lastName : 'Pik',
+                                    firsName: 'Fredy',
+                                    investingSum: 134500 
+                                },
+
+                                ],
+
+                                reliseYear: 2005,
+                                price: 9000,
+                                
+                            },   
+                            
+                            {   
+                                name : 'Furniture',
+                                owner: 'Jack',
+                                sponsors: [
+
+                                    {
+                                        lastName : 'Grant',
+                                        firsName: 'Jan',
+                                        investingSum: 120340
+                                    },
+
+                                    {
+                                        lastName : 'Crosby',
+                                        firsName: 'Mollie',
+                                        investingSum: 103478  
+                                    },
+
+                                    {
+                                        lastName : 'Henry',
+                                        firsName: 'Ameera',
+                                        investingSum: 20000  
+                                    }
+
+                                ],
+
+                                reliseYear: 2003,
+                                price: 130450,
+                            },   
+                        ]
+
+                    // let sitePriceLessThan10000 = sites.filter(site=>site.price<10000)
+                    // console.log(sitePriceLess10000)
+
+                    let sitePriceMoreThan10000 = sites.filter(site=>site.price>10000)
+                    console.log(sitePriceMoreThan10000);
+
+               </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>

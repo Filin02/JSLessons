@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №14</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 1</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text"></p>
+
+                <script>
+                        //Задача 1. Описати масив об’єктів – сайтів розроблених компанією з такими властивостями
+                        // ----- Властивості ------
+                        // -	назва компанії на час розробки (назву періодично змінюють)
+                        // -	власник компанії
+                        // -	споснсори (масив спонсорів)
+                        //          * прізвище спонсора
+                        //          * ім’я  спонсора
+                        //          * сума вкладень спонсора
+                        // -	рік випуску
+                        // -	вартість сайту
+
+                        const sites = [
+                            {
+                                name: 'JStep',
+                                owner: 'Philip',
+                                sponsors: [
+                                    {
+                                        lastName : 'Newman',
+                                        firsName: 'Jack',
+                                        investingSum: 30000,
+                                    },
+
+                                    {
+                                        lastName : 'Parker',
+                                        firsName: 'Piter',
+                                        investingSum: 20000,
+                                    },
+
+                                    {
+                                        lastName : 'Piterson',
+                                        firsName: 'Joeh',
+                                        investingSum: 20000 
+                                    }
+                                
+                                ],
+
+                                reliseYear: 2010,
+                                price: 120450,
+
+                            },
+
+                            {
+                                name: 'Cooking',
+                                owner: 'Paul',
+                                sponsors: [
+
+                                {
+                                    lastName : 'Jones',
+                                    firsName: 'Alex',
+                                    investingSum: 120340 
+                                },
+
+                                {
+                                    lastName : 'Nikelson',
+                                    firsName: 'Anne',
+                                    investingSum: 134078 
+                                },
+
+                                {
+                                    lastName : 'Pik',
+                                    firsName: 'Fredy',
+                                    investingSum: 134500 
+                                },
+
+                                ],
+
+                                reliseYear: 2005,
+                                price: 103450,
+                                
+                            },   
+                            
+                            {   
+                                name : 'Furniture',
+                                owner: 'Jack',
+                                sponsors: [
+
+                                    {
+                                        lastName : 'Grant',
+                                        firsName: 'Jan',
+                                        investingSum: 120340
+                                    },
+
+                                    {
+                                        lastName : 'Crosby',
+                                        firsName: 'Mollie',
+                                        investingSum: 103478  
+                                    },
+
+                                    {
+                                        lastName : 'Henry',
+                                        firsName: 'Ameera',
+                                        investingSum: 20000  
+                                    }
+
+                                ],
+
+                                reliseYear: 2003,
+                                price: 130450,
+                            },   
+                        ]
+
+                        //============ 1.1 Загальну вартість усіх сайтів
+
+                        // let totalSitesPrice=sites.reduce((prevSitesSum,el)=>prevSitesSum + el.price,0)
+
+                        // document.write(totalSitesPrice)
+                        
+                        // =========== 1.2. кількість сайтів, що було зроблено між 2000 та 2009 рр
+
+                        // let sitesYearsCount = sites.reduce ((prevCount,site)=>{
+                        // if( site.reliseYear > 2000 && site.reliseYear < 2009) return prevCount+=1
+                        // else return prevCount
+                        
+                        // },0)
+
+                        // document.write(sitesYearsCount)
+
+                        // =========== 1.3. кількість сайтів, де сума спонсорських вкладень була більшою за 100000,
+                        
+                        // let greatSumOfInvesting = sites.reduce((count,site)=>{
+                        //     for(item of site.sponsors){
+                        //         if(item.investingSum>100000)
+                        //         return count+1
+                        //         else return count
+                        //     }
+                        // },0)
+
+                        // console.log(greatSumOfInvesting)
+                        
+                        // =========== 1.4 створити загальний список усіх спонсорів (поки можуть повторюватись, просто зібрати усі у масив)
+
+                        // let sponsors = sites.reduce((prevSponsors,site)=>{site.sponsors.forEach((item)=>prevSponsors.push({investorName:item.firsName}))
+                            
+                        // return prevSponsors
+                        // },[])
+                        // console.log(sponsors)
+
+                        // =========== 1.5. Знайти рік, коли прибуток був найбільшим
+
+                        // let maxProfit = -Infinity
+                        // let maxProfitYear
+
+                        // for (let i = 0; i < sites.length; i++) {
+                        //     if(sites[i].price > maxProfit){
+                        //         maxProfit = sites[i].price
+                        //         maxProfitYear = sites[i].reliseYear
+                        //     }
+                        // }
+
+                        // console.log(maxProfitYear)
+
+                        // =========== 1.6 Упорядкувати список за спаданням прибутку
+
+                        // sites.sort((site1,site2) => site1.price - site2.price)
+                        // console.log(sites)
+
+                        
+
+               </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>
