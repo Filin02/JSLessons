@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання №15</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title title">Задача 1</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2>Розв'язання</h2>
+                <p class="card-text">Створити об’єкт «Тир». У масиві зберігаються 1, якщо у цьому квадраті є заєць і 0 в іншому випадку.</p>
+
+                <script>
+
+                    const cellsNum = parseInt(prompt('Введіть кількість клітинок в полі',1))
+                    const shotsCount = parseInt(prompt('Скільки берете патронів?'))
+                    
+                        
+                    class ShooterGame{
+                        constructor(cellsNum,shotsCount,field) {
+                            this.cellsNum = cellsNum;
+                            this.shotsCount = shotsCount;
+                            this.field = this.generateShootingFileld()
+                        }
+
+                        getRandomNumber(){
+                            return Math.floor(Math.random()*2)
+                        }
+
+                        generateShootingFileld() {
+                            let shootingField = []
+                            for (let i = 0; i < this.cellsNum; i++) {
+                                let randomNum = this.getRandomNumber()
+                                shootingField.push(randomNum)
+                            }
+
+                            return shootingField
+                        }
+
+                        shooting(position){
+                            if (position > this.cellsNum) {
+                                alert("Такої комірки немає")
+                            }
+                            else if (this.field[position-1] === 1){ 
+                                alert('Ви влучили')
+                            }
+                            else {
+                                alert('Можливо повезе наступного разу')
+                            }
+                        }
+
+                        run(){
+                            do{
+                                let position = parseInt(prompt(`Введіть в яку ячейку хочете вистрілити від 1 до ${this.cellsNum}`))
+                                this.shooting(position)
+                                this.shotsCount--
+                                alert(`Лишилось ${this.shotsCount} патронів`)
+                            }
+                            while(this.shotsCount!==0)
+                        }
+                        
+                        
+                    
+                    }
+
+                    let game = new ShooterGame(cellsNum,shotsCount)
+                    console.log(game.field)
+                    game.run()
+
+               </script>
+            </div>
+        </main>
+        <footer class="footer"><h2>Summer.2023</h2></footer>
+    </div>
+</body>
+</html>
