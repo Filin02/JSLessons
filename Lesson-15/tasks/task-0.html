@@ -41,10 +41,18 @@
                             return prod
                         }
                     }
+                
+                    let sum1 = obj1.getSum()
+                console.log(sum1);
+                let sum2 = obj1.getSum.call(obj2)
+                console.log(sum2)
 
-                    obj1.getSum.call(obj2)
+                let prod1 = obj2.getProd(40,60)
+                console.log(prod1);
 
-                    obj2.getProd.apply(obj1,[40,50])
+                let prod2 = obj2.getProd.apply(obj1,[20,40])
+                console.log(prod2)
+                    
 
                     
         
